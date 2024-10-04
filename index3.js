@@ -187,3 +187,4 @@ console.log(nums3);
 
 
 
+console.log('fin del repaso de javascript');
