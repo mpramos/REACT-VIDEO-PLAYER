@@ -176,6 +176,22 @@ let nums3=[nums1,...nums2]
 console.log(nums3);
 
 
+let autor={
+    nombre:'',
+    foto:'🧑'
+}
+// let autorN =autor.nombre;
+// let autorF =autor.foto;
+
+let {nombre,foto}=autor
+
+let status = nombre? 'si existe':'no existe'
+console.log(status);
+
+
+
+
+
 
 
 

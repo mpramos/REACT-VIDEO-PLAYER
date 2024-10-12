@@ -3,15 +3,20 @@ import './App.css'
 
 
 const Header =(props)=>{
+  let datos=props.data
+  console.log('datos ', datos);
+  let {bienvenida,titulo,subtitulo,autor,fecha}=datos
+  let {nombre,partner} = autor
+  
   return (
     <header>
-      <h1>{props.data.bienvenida}</h1>
-      <h2>{props.data.titulo}</h2>
-      <h3>{props.data.subtitulo}</h3>
+      <h1>{bienvenida}</h1>
+      <h2>{titulo}</h2>
+      <h3>{subtitulo}</h3>
       <p>
-        Academia: {props.data.autor.nombre} {props.data.autor.partner}
+        Academia: {nombre} {partner}
       </p>
-      <small>{showDate(props.data.fecha)}</small>
+      <small>{showDate(fecha)}</small>
   </header>
   )
 }
