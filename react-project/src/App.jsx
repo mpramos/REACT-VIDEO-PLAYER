@@ -1,5 +1,7 @@
 import './App.css'
 
+
+
 const Header =(props)=>{
   console.log('props' , props);
   
@@ -15,6 +17,20 @@ const Header =(props)=>{
   </header>
   )
 }
+const Status=(props)=>{
+  let status= props.status? 'La academia de Evolutech está formando a estudiantes por más de dos años':'La academia de Evolutech está formando a estudiante por menos de dos años'
+  return (
+    <p>{status}</p>)
+}
+
+
+const Peso=(props)=>{
+  return(<p>Props Numeros Peso{props.peso}</p>)
+}
+
+const AñosAcademia=(props)=>{
+  return (<p> Evolutech tiene {props.años} años</p>)
+}
 
 function App() {
   let bienvenida='Bienvenidos a la especialidad de React ' //string
@@ -23,30 +39,15 @@ function App() {
   let fecha='11 Oct 2014'
   let nombre='Evolutech'
   let partner='Cisco'
-
+  
   let añoActual= 2024
   let añoInauguración=2021
   let añosAcademia=añoActual-añoInauguración 
   let masa=75
   const gravedad=9.81
-
+  
   let status=añosAcademia>2 //true
-
-
-  const Status=(props)=>{
-    let status= props.status? 'La academia de Evolutech está formando a estudiantes por más de dos años':'La academia de Evolutech está formando a estudiante por menos de dos años'
-    return (
-      <p>{status}</p>)
-  }
-
-
-  const Peso=(props)=>{
-    return(<p>Props Numeros Peso{props.peso}</p>)
-  }
-
-  const AñosAcademia=(props)=>{
-    return (<p> Evolutech tiene {props.años} años</p>)
-  }
+  
   return (
   <>
     <Header 
