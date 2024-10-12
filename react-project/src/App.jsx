@@ -3,17 +3,15 @@ import './App.css'
 
 
 const Header =(props)=>{
-  console.log('props' , props);
-  
   return (
     <header>
-      <h1>{props.bienvenida}</h1>
-      <h2>{props.titulo}</h2>
-      <h3>{props.subtitulo}</h3>
+      <h1>{props.data.bienvenida}</h1>
+      <h2>{props.data.titulo}</h2>
+      <h3>{props.data.subtitulo}</h3>
       <p>
-        Academia: {props.nombre} {props.partner}
+        Academia: {props.data.autor.nombre} {props.data.autor.partner}
       </p>
-      <small>{props.fecha}</small>
+      <small>{showDate(props.data.fecha)}</small>
   </header>
   )
 }
@@ -37,13 +35,39 @@ const AñosAcademia=(props)=>{
   return (<p> Evolutech tiene {props.años} años</p>)
 }
 
+function showDate(time){
+    const meses=[
+      'Enero',
+      'Febrero',
+      'Marzo',
+      'Abril',
+      'Mayo',
+      'Junio',
+      'Julio',
+      'Agosto',
+      'Septiembre',
+      'Octubre',
+      'Noviembre',
+      'Diciembre'
+    ]
+    let mes=meses[time.getMonth()]
+    let año=time.getFullYear()
+    let dia=time.getDate()
+    return `${dia} ${mes} ${año}`
+
+}
 function App() {
-  let bienvenida='Bienvenidos a la especialidad de React ' //string
-  let titulo='Iniciando con React' //string 
-  let subtitulo='React es una libreria de JavaScript'
-  let fecha='11 Oct 2014'
-  let nombre='Evolutech'
-  let partner='Cisco'
+  let data={
+    bienvenida:'Bienvenidos a la especialidad de React ',
+    titulo:'Iniciando con React',
+    subtitulo:'React es una libreria de JavaScript',
+    autor:{
+      nombre:'Evolutech',
+      partner:'Cisco'
+    },
+    fecha:new Date()
+
+  }
   
   let añoActual= 2024
   let añoInauguración=2021
@@ -53,15 +77,18 @@ function App() {
   
   let status=añosAcademia>2 //true
   let skills=['HTML','CSS','JAVASCRIPT']
+
+  
   return (
   <>
     <Header 
-    bienvenida={bienvenida}
-    titulo={titulo}
-    subtitulo={subtitulo}
-    nombre={nombre}
-    partner={partner}
-    fecha={fecha}
+      data={data}
+    // bienvenida={bienvenida}
+    // titulo={titulo}
+    // subtitulo={subtitulo}
+    // nombre={nombre}
+    // partner={partner}
+    // fecha={fecha}
     />
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
