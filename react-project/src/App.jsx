@@ -1,8 +1,8 @@
 import './App.css'
 
-
-
 const Header =(props)=>{
+  console.log('props' , props);
+  
   return (
     <header>
       <h1>{props.bienvenida}</h1>
@@ -16,79 +16,50 @@ const Header =(props)=>{
   )
 }
 
-const UserCard=(props)=>{
-  return (
-    <>
-      <img src="https://rickandmortyapi.com/api/character/avatar/69.jpeg" alt="Imagen de Rick" />
-      <h2>Academia {props.nombre} {props.partner}</h2>
-    </>
-  )
-}
-
-const TechList=()=>{
-  const techs =['HTML','CSS','JavaScript']
-  const techFormatted= techs.map(tech=> <li key={tech}>{tech}</li> )
-  return techFormatted
-}
-const Main =(props)=>(
-  <main>
-    <p> Prerequisitos para iniciar en React</p>
-    <ul>
-      <TechList/>
-    </ul>
-    <UserCard nombre={props.nombre} partner={props.partner}/>
-  </main>
-)
-const Footer=()=>{
-
- return (
- <footer>
-    <p>Coyright 2024</p>
-  </footer>
-  )
-}
-
-const buttonStyles={
-  padding:'10px 20px',
-  background:'rgb(0,255,0)',
-  border:'none',
-  borderRadius:5
-}
-
-const Button =()=> <button style={buttonStyles}>action</button>
-
-
-const ObtenerInforUsuario=(props)=>{
-  return (
-    <>
-    <h1>
-      {props.nombre}
-      {props.apellido}
-    </h1>
-    <small>{props.country}</small>
-    </>
-  )
-
-}
 function App() {
-  let bienvenida='Bienvenidos a la especialidad de React '
+  let bienvenida='Bienvenidos a la especialidad de React ' //string
+  let titulo='Iniciando con React' //string 
+  let subtitulo='React es una libreria de JavaScript'
+  let fecha='11 Oct 2014'
   let nombre='Evolutech'
   let partner='Cisco'
+
+  let añoActual= 2024
+  let añoInauguración=2021
+  let añosAcademia=añoActual-añoInauguración 
+  let masa=75
+  const gravedad=9.81
+
+  let status=añosAcademia>2 //true
+
+
+  const Status=(props)=>{
+    let status= props.status? 'La academia de Evolutech está formando a estudiantes por más de dos años':'La academia de Evolutech está formando a estudiante por menos de dos años'
+    return (
+      <p>{status}</p>)
+  }
+
+
+  const Peso=(props)=>{
+    return(<p>Props Numeros Peso{props.peso}</p>)
+  }
+
+  const AñosAcademia=(props)=>{
+    return (<p> Evolutech tiene {props.años} años</p>)
+  }
   return (
   <>
     <Header 
     bienvenida={bienvenida}
-    titulo='Iniciando con React'
-    subtitulo='React es una libreria de JavaScript'
+    titulo={titulo}
+    subtitulo={subtitulo}
     nombre={nombre}
     partner={partner}
-    fecha='8 Oct 2014'
-
+    fecha={fecha}
     />
-    <Main nombre={nombre} partner={partner}/>
-    <Button/>
-    <Footer/>
-    <ObtenerInforUsuario nombre='Juan' apellido='Ramirez' pais='Bolivia' />
+    <Peso peso={masa*gravedad}/>
+    <AñosAcademia años={añosAcademia}/>
+    <Status status={status}/>
   </>
   )
 }
