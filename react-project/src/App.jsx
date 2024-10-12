@@ -2,10 +2,8 @@ import './App.css'
 
 
 
-const Header =(props)=>{
-  let datos=props.data
-  console.log('datos ', datos);
-  let {
+const Header =({
+  data:{
     bienvenida,
     titulo,
     subtitulo,
@@ -13,7 +11,9 @@ const Header =(props)=>{
       nombre,
       partner
     },
-    fecha}=datos
+    fecha
+  }
+})=>{
   
   return (
     <header>
