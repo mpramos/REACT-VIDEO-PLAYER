@@ -5,8 +5,15 @@ import './App.css'
 const Header =(props)=>{
   let datos=props.data
   console.log('datos ', datos);
-  let {bienvenida,titulo,subtitulo,autor,fecha}=datos
-  let {nombre,partner} = autor
+  let {
+    bienvenida,
+    titulo,
+    subtitulo,
+    autor:{
+      nombre,
+      partner
+    },
+    fecha}=datos
   
   return (
     <header>
