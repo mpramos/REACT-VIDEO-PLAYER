@@ -140,6 +140,11 @@ console.log(firstFood);
 // console.log(foodsEmoji);
 console.log(foods);
 
+
+let time=new Date()
+console.log(time.getDate());
+
+
 let filterFoods= foods.filter(food=>typeof food=='string')
 console.log(filterFoods);
 

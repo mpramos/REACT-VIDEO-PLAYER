@@ -15,6 +15,9 @@ const Header =(props)=>{
   </header>
   )
 }
+let Button =(props)=>{
+ return(<button onClick={props.onClick}>{props.text}</button>)
+}
 
 let Skills=(props)=> {
   const skillList= props.skills.map(skill=><li>{skill}</li>) 
@@ -78,22 +81,19 @@ function App() {
   let status=añosAcademia>2 //true
   let skills=['HTML','CSS','JAVASCRIPT']
 
-  
+  function decirAlgo() {
+    alert('Hola soy el gato ninja 🐱‍👤')
+  }
+
   return (
   <>
-    <Header 
-      data={data}
-    // bienvenida={bienvenida}
-    // titulo={titulo}
-    // subtitulo={subtitulo}
-    // nombre={nombre}
-    // partner={partner}
-    // fecha={fecha}
-    />
+    <Header data={data} />
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
     <Status status={status}/>
     <Skills skills={skills}/>
+    <Button text={'decir algo'} onClick={decirAlgo}/>
+    <Button text={'decir otra cosa'} onClick={()=>alert('Hola somos dos gato ninjas 🐱‍👤🐱‍👤')}/>
   </>
   )
 }
