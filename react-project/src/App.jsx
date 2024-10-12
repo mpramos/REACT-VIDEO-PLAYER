@@ -17,6 +17,11 @@ const Header =(props)=>{
   </header>
   )
 }
+
+let Skills=(props)=> {
+  const skillList= props.skills.map(skill=><li>{skill}</li>) 
+  return <ol>{skillList}</ol>
+}
 const Status=(props)=>{
   let status= props.status? 'La academia de Evolutech está formando a estudiantes por más de dos años':'La academia de Evolutech está formando a estudiante por menos de dos años'
   return (
@@ -47,7 +52,7 @@ function App() {
   const gravedad=9.81
   
   let status=añosAcademia>2 //true
-  
+  let skills=['HTML','CSS','JAVASCRIPT']
   return (
   <>
     <Header 
@@ -61,6 +66,7 @@ function App() {
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
     <Status status={status}/>
+    <Skills skills={skills}/>
   </>
   )
 }
