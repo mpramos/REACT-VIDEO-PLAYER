@@ -1,4 +1,5 @@
 import './App.css'
+import { EstadoAnimo } from './EstadoAnimo'
 
 
 
@@ -106,6 +107,7 @@ function App() {
     <Skills skills={skills}/>
     <Button text={'decir algo'} onClick={decirAlgo}/>
     <Button text={'decir otra cosa'} onClick={()=>alert('Hola somos dos gato ninjas 🐱‍👤🐱‍👤')}/>
+      <EstadoAnimo/>
   </>
   )
 }
