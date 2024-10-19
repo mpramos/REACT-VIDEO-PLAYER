@@ -6,6 +6,7 @@ import { BtnOnkeyPress } from './BtnOnkeyPress'
 import { BtnOnMouse } from './BtnOnMouse'
 import BtnOnSubmit from './BtnOnSubmit'
 import { EstadoAnimo } from './EstadoAnimo'
+import { FormularioComplejo } from './FormularioComplejo'
 import FormularioSimple from './FormularioSimple'
 
 const Header =({
@@ -119,7 +120,8 @@ function App() {
       <BtnOnMouse/>
       <BtnOnBlur/>
       <BtnOnSubmit/> */}
-    <FormularioSimple/>
+    {/* <FormularioSimple/> */}
+    <FormularioComplejo/>
   </>
   )
 }
