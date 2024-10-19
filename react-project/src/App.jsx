@@ -6,6 +6,7 @@ import { BtnOnkeyPress } from './BtnOnkeyPress'
 import { BtnOnMouse } from './BtnOnMouse'
 import BtnOnSubmit from './BtnOnSubmit'
 import { EstadoAnimo } from './EstadoAnimo'
+import FormularioSimple from './FormularioSimple'
 
 const Header =({
   data:{
@@ -104,21 +105,21 @@ function App() {
 
   return (
   <>
-    <Header data={data} />
+    {/* <Header data={data} />
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
     <Status status={status}/>
     <Skills skills={skills}/>
     <Button text={'decir algo'} onClick={decirAlgo}/>
-    <Button text={'decir otra cosa'} onClick={()=>alert('Hola somos dos gato ninjas 🐱‍👤🐱‍👤')}/>
+    <Button text={'decir otra cosa'} onClick={()=>alert('Hola somos dos gato ninjas 🐱‍👤🐱‍👤')}/> */}
       {/* <EstadoAnimo/> */}
-      <BtnOnClick/>
+      {/* <BtnOnClick/>
       <BtnOnChange/>
       <BtnOnkeyPress/>
       <BtnOnMouse/>
       <BtnOnBlur/>
-      <BtnOnSubmit/>
-
+      <BtnOnSubmit/> */}
+    <FormularioSimple/>
   </>
   )
 }
