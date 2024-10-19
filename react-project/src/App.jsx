@@ -1,6 +1,10 @@
 import './App.css'
+import { BtnOnBlur } from './BtnOnBlur'
 import { BtnOnChange } from './BtnOnChange'
 import { BtnOnClick } from './BtnOnClick'
+import { BtnOnkeyPress } from './BtnOnkeyPress'
+import { BtnOnMouse } from './BtnOnMouse'
+import BtnOnSubmit from './BtnOnSubmit'
 import { EstadoAnimo } from './EstadoAnimo'
 
 const Header =({
@@ -110,6 +114,10 @@ function App() {
       {/* <EstadoAnimo/> */}
       <BtnOnClick/>
       <BtnOnChange/>
+      <BtnOnkeyPress/>
+      <BtnOnMouse/>
+      <BtnOnBlur/>
+      <BtnOnSubmit/>
 
   </>
   )
