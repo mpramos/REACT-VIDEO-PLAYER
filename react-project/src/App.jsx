@@ -1,7 +1,7 @@
 import './App.css'
+import { BtnOnChange } from './BtnOnChange'
+import { BtnOnClick } from './BtnOnClick'
 import { EstadoAnimo } from './EstadoAnimo'
-
-
 
 const Header =({
   data:{
@@ -107,7 +107,10 @@ function App() {
     <Skills skills={skills}/>
     <Button text={'decir algo'} onClick={decirAlgo}/>
     <Button text={'decir otra cosa'} onClick={()=>alert('Hola somos dos gato ninjas 🐱‍👤🐱‍👤')}/>
-      <EstadoAnimo/>
+      {/* <EstadoAnimo/> */}
+      <BtnOnClick/>
+      <BtnOnChange/>
+
   </>
   )
 }
