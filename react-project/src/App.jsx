@@ -7,6 +7,8 @@ import { BtnOnMouse } from './BtnOnMouse'
 import BtnOnSubmit from './BtnOnSubmit'
 import { EstadoAnimo } from './EstadoAnimo'
 import { FormularioComplejo } from './FormularioComplejo'
+import { FormularioMultiple } from './FormularioMultiple'
+import { FormularioMultipleComplejo } from './FormularioMultipleComplejo'
 import FormularioSimple from './FormularioSimple'
 
 const Header =({
@@ -121,7 +123,9 @@ function App() {
       <BtnOnBlur/>
       <BtnOnSubmit/> */}
     {/* <FormularioSimple/> */}
-    <FormularioComplejo/>
+    {/* <FormularioComplejo/> */}
+    {/* <FormularioMultiple/> */}
+    <FormularioMultipleComplejo/>
   </>
   )
 }

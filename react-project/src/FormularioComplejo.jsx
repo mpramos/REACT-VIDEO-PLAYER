@@ -15,7 +15,7 @@ export const FormularioComplejo = () => {
         let {name,value}=e.target
         setFormData((prevData)=>({
             ...prevData,
-            [name]:value //
+            [name]:value // {firstName:'Lorenzo',lastName:'Ramirez',email:''}
         }))
     }
     return (
