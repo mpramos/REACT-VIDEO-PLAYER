@@ -11,7 +11,7 @@ export const FormularioMultipleComplejo = () => {
         }
     })
     const handleChange=(e)=>{
-        const {name,value,type,checked}=e.target
+        const {name,type,checked}=e.target
         if(type==='checkbox'){
             setFormData((prevData)=>({
                 ...prevData,
