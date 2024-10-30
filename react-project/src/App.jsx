@@ -10,6 +10,11 @@ import { FormularioComplejo } from './FormularioComplejo'
 import { FormularioMultiple } from './FormularioMultiple'
 import { FormularioMultipleComplejo } from './FormularioMultipleComplejo'
 import FormularioSimple from './FormularioSimple'
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+import NavBar from './NavBar'
+import RickAndMortyFetch from './RickAndMortyFetch'
 
 const Header =({
   data:{
@@ -108,6 +113,14 @@ function App() {
 
   return (
   <>
+  <Router>
+    <NavBar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/personajes' element={<RickAndMortyFetch/>}/>
+      </Routes>
+  </Router>
     {/* <Header data={data} />
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
@@ -125,7 +138,7 @@ function App() {
     {/* <FormularioSimple/> */}
     {/* <FormularioComplejo/> */}
     {/* <FormularioMultiple/> */}
-    <FormularioMultipleComplejo/>
+    {/* <FormularioMultipleComplejo/> */}
   </>
   )
 }
