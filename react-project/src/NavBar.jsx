@@ -13,6 +13,10 @@ function NavBar() {
        <Link to="/personajesaxios"> Rick and Morty con axios</Link>
        <br/>
        <Link to="/ref1"> ref input</Link>
+       <br/>
+       <Link to="/useState1"> use state button</Link>
+       <br/>
+       <Link to="/formsubmit"> form submit</Link>
 
     </>
   )

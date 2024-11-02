@@ -17,6 +17,8 @@ import NavBar from './NavBar'
 import RickAndMortyFetch from './RickAndMortyFetch'
 import RickAndMortyAxios from './RickAndMortyAxios'
 import Ref1 from './Ref1'
+import ToggleButton from './ToggleButton'
+import FormSubmit from './FormSubmit'
 
 const Header =({
   data:{
@@ -124,6 +126,8 @@ function App() {
         <Route path='/personajes' element={<RickAndMortyFetch/>}/>
         <Route path='/personajesaxios' element={<RickAndMortyAxios/>}/>
         <Route path='/ref1' element={<Ref1/>}/>
+        <Route path='/useState1' element={<ToggleButton/>}/>
+        <Route path='/formsubmit' element={<FormSubmit/>}/>
       </Routes>
   </Router>
     {/* <Header data={data} />
