@@ -20,6 +20,7 @@ import Ref1 from './Ref1'
 import ToggleButton from './ToggleButton'
 import FormSubmit from './FormSubmit'
 import MyInputRef from './MyInputRef'
+import CharacterList from './CharacterList'
 
 const Header =({
   data:{
@@ -130,6 +131,7 @@ function App() {
         <Route path='/useState1' element={<ToggleButton/>}/>
         <Route path='/formsubmit' element={<FormSubmit/>}/>
         <Route path='/forward' element={<MyInputRef/>}/>
+        <Route path='/useHook' element={<CharacterList/>}/>
       </Routes>
   </Router>
     {/* <Header data={data} />

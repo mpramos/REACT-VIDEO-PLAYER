@@ -19,6 +19,8 @@ function NavBar() {
        <Link to="/formsubmit"> form submit</Link>
        <br/>
        <Link to="/forward"> forward</Link>
+       <br/>
+       <Link to="/useHook"> useHook</Link>
 
     </>
   )
