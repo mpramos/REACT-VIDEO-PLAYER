@@ -17,6 +17,8 @@ function NavBar() {
        <Link to="/useState1"> use state button</Link>
        <br/>
        <Link to="/formsubmit"> form submit</Link>
+       <br/>
+       <Link to="/forward"> forward</Link>
 
     </>
   )
