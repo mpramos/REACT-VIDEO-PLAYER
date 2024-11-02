@@ -8,7 +8,7 @@ const RickAndMortyFetch = () => {
     useEffect(()=>{
         const obtPersonajes=async()=>{
             const data= await fetch(urlBase)
-            const respuesta=await data.json()
+            const respuesta=await data.json()//undefined
             const results= await respuesta.results
             console.log(results);
             setPersonajes(results)

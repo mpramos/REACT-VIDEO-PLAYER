@@ -15,6 +15,7 @@ import Home from './Home'
 import About from './About'
 import NavBar from './NavBar'
 import RickAndMortyFetch from './RickAndMortyFetch'
+import RickAndMortyAxios from './RickAndMortyAxios'
 
 const Header =({
   data:{
@@ -119,6 +120,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/personajes' element={<RickAndMortyFetch/>}/>
+        <Route path='/personajes' element={<RickAndMortyFetch/>}/>
+        <Route path='/personajesaxios' element={<RickAndMortyAxios/>}/>
       </Routes>
   </Router>
     {/* <Header data={data} />

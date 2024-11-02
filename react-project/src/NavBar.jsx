@@ -9,6 +9,9 @@ function NavBar() {
        <Link to="/about"> About</Link>
        <br/>
        <Link to="/personajes"> Rick and Morty</Link>
+       <br/>
+       <Link to="/personajesaxios"> Rick and Morty con axios</Link>
+
     </>
   )
 }
