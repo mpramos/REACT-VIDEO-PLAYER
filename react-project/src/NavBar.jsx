@@ -11,6 +11,8 @@ function NavBar() {
        <Link to="/personajes"> Rick and Morty</Link>
        <br/>
        <Link to="/personajesaxios"> Rick and Morty con axios</Link>
+       <br/>
+       <Link to="/ref1"> ref input</Link>
 
     </>
   )
