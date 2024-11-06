@@ -17,7 +17,7 @@ function MapeoArrays() {
     )
 
     const Skills=({skills})=>{
-        const listSkills= skills.map((skill)=><Skill skill={skill}/>)
+        const listSkills= skills.map((skill)=><Skill key={skill[0]} skill={skill}/>)
         return <ul>{listSkills}</ul>
     }
     return (

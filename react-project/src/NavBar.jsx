@@ -25,6 +25,8 @@ function NavBar() {
        <Link to="/arreglosimple"> arreglo de numeros</Link>
        <br/>
        <Link to="/mapeoarreglos"> mapeoarreglos</Link>
+       <br/>
+       <Link to="/mapeobjetos"> mapeobjetos</Link>
 
     </>
   )

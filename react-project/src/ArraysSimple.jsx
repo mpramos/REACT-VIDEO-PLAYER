@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ArraysSimple = () => {
     const Numbers =({numbers})=>{
-       const listNumbers=numbers.map((number)=><li>{number}</li>) 
+       const listNumbers=numbers.map((number)=><li key={number}>{number}</li>) 
         return listNumbers
     }
     const numbers=[1,2,3,4,5,6]

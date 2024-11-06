@@ -23,6 +23,7 @@ import MyInputRef from './MyInputRef'
 import CharacterList from './CharacterList'
 import { ArraysSimple } from './ArraysSimple'
 import MapeoArrays from './MapeoArrays'
+import MapeoObjetos from './MapeoObjetos'
 
 const Header =({
   data:{
@@ -136,7 +137,7 @@ function App() {
         <Route path='/useHook' element={<CharacterList/>}/>
         <Route path='/arreglosimple' element={<ArraysSimple/>}/>
         <Route path='/mapeoarreglos' element={<MapeoArrays/>}/>
-        {/* <Route path='/useHook' element={<CharacterList/>}/> */}
+        <Route path='/mapeobjetos' element={<MapeoObjetos/>}/>
         {/* <Route path='/useHook' element={<CharacterList/>}/> */}
       </Routes>
   </Router>
