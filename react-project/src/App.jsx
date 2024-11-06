@@ -21,6 +21,7 @@ import ToggleButton from './ToggleButton'
 import FormSubmit from './FormSubmit'
 import MyInputRef from './MyInputRef'
 import CharacterList from './CharacterList'
+import { ArraysSimple } from './ArraysSimple'
 
 const Header =({
   data:{
@@ -132,6 +133,9 @@ function App() {
         <Route path='/formsubmit' element={<FormSubmit/>}/>
         <Route path='/forward' element={<MyInputRef/>}/>
         <Route path='/useHook' element={<CharacterList/>}/>
+        <Route path='/arreglosimple' element={<ArraysSimple/>}/>
+        {/* <Route path='/useHook' element={<CharacterList/>}/> */}
+        {/* <Route path='/useHook' element={<CharacterList/>}/> */}
       </Routes>
   </Router>
     {/* <Header data={data} />

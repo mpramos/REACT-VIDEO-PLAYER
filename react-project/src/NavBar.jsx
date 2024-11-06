@@ -21,6 +21,8 @@ function NavBar() {
        <Link to="/forward"> forward</Link>
        <br/>
        <Link to="/useHook"> useHook</Link>
+       <br/>
+       <Link to="/arreglosimple"> arreglo de numeros</Link>
 
     </>
   )
