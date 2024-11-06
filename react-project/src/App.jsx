@@ -22,6 +22,7 @@ import FormSubmit from './FormSubmit'
 import MyInputRef from './MyInputRef'
 import CharacterList from './CharacterList'
 import { ArraysSimple } from './ArraysSimple'
+import MapeoArrays from './MapeoArrays'
 
 const Header =({
   data:{
@@ -134,6 +135,7 @@ function App() {
         <Route path='/forward' element={<MyInputRef/>}/>
         <Route path='/useHook' element={<CharacterList/>}/>
         <Route path='/arreglosimple' element={<ArraysSimple/>}/>
+        <Route path='/mapeoarreglos' element={<MapeoArrays/>}/>
         {/* <Route path='/useHook' element={<CharacterList/>}/> */}
         {/* <Route path='/useHook' element={<CharacterList/>}/> */}
       </Routes>

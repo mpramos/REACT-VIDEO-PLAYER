@@ -23,6 +23,8 @@ function NavBar() {
        <Link to="/useHook"> useHook</Link>
        <br/>
        <Link to="/arreglosimple"> arreglo de numeros</Link>
+       <br/>
+       <Link to="/mapeoarreglos"> mapeoarreglos</Link>
 
     </>
   )
