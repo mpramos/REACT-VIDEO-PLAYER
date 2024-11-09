@@ -1,13 +1,13 @@
 import { onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'
 import React, { useEffect, useState } from 'react'
-import { auth } from './firebaseConfig'
+import { auth, provider } from './firebaseConfig'
 import {Typography,Button} from '@mui/material'
 export const Auth = () => {
     const [user,setUser]= useState(null)
 
     const handleLogin=async () => {
         try {
-            await signInWithPopup(auth,)
+            await signInWithPopup(auth,provider)
         } catch (error) {
             console.error("Error de la autenticacio ", error)    
         }

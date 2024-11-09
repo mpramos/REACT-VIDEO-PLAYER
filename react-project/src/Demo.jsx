@@ -1,6 +1,6 @@
 import React from 'react'
 import { HStack } from "@chakra-ui/react"
-import { Avatar } from "@/components/ui/avatar"
+import { Avatar } from "@mui/material"
 
 function Demo() {
   return(
