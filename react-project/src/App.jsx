@@ -28,6 +28,7 @@ import HeaderC from './HeaderC'
 import BasicButtons from './BasicButtons'
 import MediaCard from './MediaCard'
 import Demo from './Demo'
+import { Auth } from './Auth'
 
 const Header =({
   data:{
@@ -126,9 +127,10 @@ function App() {
 
   return (
   <>
-  <BasicButtons/>
+  <Auth/>
+  {/* <BasicButtons/>
   <Demo/>
-  <MediaCard/>
+  <MediaCard/> */}
   {/* <Router>
     <NavBar/>
       <Routes>
