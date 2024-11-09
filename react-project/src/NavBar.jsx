@@ -5,6 +5,8 @@ function NavBar() {
   return (
     <>
        <Link to="/"> Home</Link>
+       <br />
+       <Link to="/header"> header</Link>
        <br/>
        <Link to="/about"> About</Link>
        <br/>
@@ -27,6 +29,7 @@ function NavBar() {
        <Link to="/mapeoarreglos"> mapeoarreglos</Link>
        <br/>
        <Link to="/mapeobjetos"> mapeobjetos</Link>
+       <br/>
 
     </>
   )

@@ -24,6 +24,10 @@ import CharacterList from './CharacterList'
 import { ArraysSimple } from './ArraysSimple'
 import MapeoArrays from './MapeoArrays'
 import MapeoObjetos from './MapeoObjetos'
+import HeaderC from './HeaderC'
+import BasicButtons from './BasicButtons'
+import MediaCard from './MediaCard'
+import Demo from './Demo'
 
 const Header =({
   data:{
@@ -122,10 +126,14 @@ function App() {
 
   return (
   <>
-  <Router>
+  <BasicButtons/>
+  <Demo/>
+  <MediaCard/>
+  {/* <Router>
     <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/header' element={<HeaderC/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/personajes' element={<RickAndMortyFetch/>}/>
         <Route path='/personajes' element={<RickAndMortyFetch/>}/>
@@ -139,8 +147,8 @@ function App() {
         <Route path='/mapeoarreglos' element={<MapeoArrays/>}/>
         <Route path='/mapeobjetos' element={<MapeoObjetos/>}/>
         {/* <Route path='/useHook' element={<CharacterList/>}/> */}
-      </Routes>
-  </Router>
+      {/* </Routes> */}
+  {/* </Router> */}
     {/* <Header data={data} />
     <Peso peso={masa*gravedad}/>
     <AñosAcademia años={añosAcademia}/>
