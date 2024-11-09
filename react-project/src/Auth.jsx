@@ -28,6 +28,8 @@ return (
             {user ?(
                 <>
                 <Typography>Bienvenido, {user.displayName}</Typography>
+                <img src={user.photoURL} alt="Perfil de usuario" style={{borderRadius:"50%"}} />
+                <p>Email :{user.email}</p>
                  <Button onClick={handleLogout}>Cerrar sesion</Button>                       
                 </>
 

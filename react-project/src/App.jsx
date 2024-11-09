@@ -29,6 +29,8 @@ import BasicButtons from './BasicButtons'
 import MediaCard from './MediaCard'
 import Demo from './Demo'
 import { Auth } from './Auth'
+import { SaveData } from './SaveData'
+import { ShowData } from './ShowData'
 
 const Header =({
   data:{
@@ -128,6 +130,8 @@ function App() {
   return (
   <>
   <Auth/>
+  <SaveData/>
+  <ShowData/>
   {/* <BasicButtons/>
   <Demo/>
   <MediaCard/> */}
